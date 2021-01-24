@@ -11,7 +11,7 @@ module.exports = function transform(arr) {
       i++;
     }
     else if (arr[i] === '--discard-prev') {
-      transformedArr.pop();
+      let a = transformedArr.pop();
     }
     else if (arr[i] === '--double-next') {
       if (i != arr.length - 1) {
